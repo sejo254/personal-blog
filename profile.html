@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waswa - Web Developer</title>
+    <!-- Add any CSS styles or external stylesheet links here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: purple;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Header styles */
+        header {
+            background-color: transparent;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;}
+            header:hover {
+            transform: translateY(-5px);
+            background-color: greenyellow;
+            color: #007bff;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        /* Navigation styles */
+        nav {
+            background-color: transparent;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav:hover {
+            transform: translateY(-5px);
+            background-color: greenyellow;
+            color: #007bff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: greenyellow;
+            color: blue;
+        }
+        /* Section styles */
+        section {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+
+        color: white;
+            
+        }
+        section:hover {
+            transform: translateY(-5px);
+            background-color: greenyellow;
+            color: #007bff;
+            
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .profile-image {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Contact card styles */
+        .contact-card {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            background-color: greenyellow;
+        }
+        .contact-card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-card p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #about{
+            color:white ;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Developers Profile</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        
+        <a href="contact.html">Hire Me</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="IMG_20230825_145623_201.jpg" alt="Waswa" class="profile-image">
+        <p><SPan style="color: azure;">Hi, I'm Waswa, a web developer proficient in HTML, CSS,JavaScript and PHP.</SPan></p>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <ul>
+            <li>Creation of static websites</li>
+            <li>Creation of dynamic websites</li>
+            <li>Integration of M-Pesa</li>
+            <li>Improving existing websites</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-card">
+        <h2>Contact Me</h2>
+        <p> <a href="tel:+254115617233">call</a></p>
+        <div class="social-icons">
+            <a href="https://wa.me/254115617233"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:liteke04@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61550232463121"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Waswa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     background:purple ;
+    background-attachment: fixed;
+}
+h1{
+width: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 100%;
+    background-color:maroon;
+    color:black;
+    transition: width 0.3s;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.sidebar:hover {
+    background-color: transparent;
+    color: aqua;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    animation:blinker 5s linear infinite;
+}
+@keyframes blinker {
+       25%{
+        color: black;
+       }
+      50% {
+        color: aqua;
+      }
+      75%{
+        color: blue;
+       }
+      100% {
+        color: green;
+      }
+
+}
+header:hover {
+    background-color: maroon;
+    color: white;
+}
+
+#menuButton {
+    background: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+#menuButton:hover {
+    background-color: purple;
+    color: aqua;
+}
+
+.sidebar.collapsed {
+    width: 0;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-color:transparent;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.info {
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#e9e9e9;
+}
+.info:hover {
+    background-color:maroon;
+    color:white;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.location-time {
+    padding: 20px;
+    background-color: plum;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.location-time:hover {
+    background-color:maroon;
+    color:white;}
+
+.location-time h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: plum;
+}
+footer:hover {
+    background-color:transparent;
+    color:white;}
